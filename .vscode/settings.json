@@ -1,0 +1,8 @@
+{
+  "screencastMode.keyboardOverlayTimeout": 500,
+  "editor.fontSize": 16,
+  "editor.tabSize": 4,
+  "editor.renderWhitespace": "selection",
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.accessibilityPageSize": 10
+}

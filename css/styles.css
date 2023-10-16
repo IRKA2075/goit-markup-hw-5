@@ -1,0 +1,460 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  background-color: #ffffff;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+button {
+  cursor: pointer;
+}
+img {
+  display: block;
+}
+address {
+  font-style: normal;
+}
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/*============================================================*/
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header {
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.header-logo {
+  font-family: "Raleway", sans-serif;
+  color: #4d5ae5;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin-right: 76px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.header-pathlogo {
+  color: #2e2f42;
+}
+.header-menu-list {
+  display: flex;
+  gap: 40px;
+}
+.header-menu-link {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  font-style: normal;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: block;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.current {
+  position: relative;
+  color: #404bbf;
+}
+.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  width: 48px;
+}
+.header-menu-link:hover,
+.header-menu-link:focus {
+  color: #404bbf;
+}
+/*.header-menu-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  width: 48px;
+}*/
+.header-contact {
+  font-style: normal;
+}
+.header-contact-list {
+  display: flex;
+  gap: 40px;
+}
+.header-contact-item {
+}
+.header-contact-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.header-contact-link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-contact-link:hover,
+.header-contact-link:focus {
+  color: #404bbf;
+}
+/*=================================================================*/
+.footer {
+  background-color: #2e2f42;
+  align-items: baseline;
+  padding: 100px 0; /*156px*/
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.footer-logo {
+  margin-bottom: 16px;
+  display: inline-block;
+}
+.footer-pathlogo {
+  color: #f4f4fd;
+  max-width: 264px;
+}
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-logo-wrap {
+  margin-right: 120px;
+}
+.footer-soc-container {
+}
+.footer-soc-list {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+.footer-soc-paragraf {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.footer-soc-wrap-item {
+  width: 40px;
+  height: 40px;
+}
+.footer-soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  transition-property: color, background-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: #31d0aa;
+}
+.footer-soc-icon {
+  fill: #f4f4fd;
+}
+/*======================================================================*/
+.hero {
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/herobg.jpg);
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+  padding: 188px 0;
+}
+.hero-container {
+  /*background-color: #2e2f42;*/
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-title {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: #fff;
+  text-align: center;
+  max-width: 496px;
+  margin-bottom: 48px;
+  margin: 0 auto;
+}
+.hero-btn {
+  background-color: #4d5ae5;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 4px;
+  margin: 48px auto auto auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #404bbf;
+}
+/*==================================*/
+.accomplishments {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.accomplishments-list {
+  display: flex;
+  gap: 24px;
+}
+.accomplishments-item {
+  width: 264px;
+}
+.accomplishments-icon-wrap {
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  border: 1px solid;
+  color: #8e8f99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  margin-bottom: 8px;
+}
+.accomplishments-subtitle {
+  font-family: "Roboto", sans-serif;
+  color: #2e2f42;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.accomplishments-item-text {
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/*===========================*/
+.our-team {
+  background-color: #f4f4fd;
+  padding: 120px 0;
+}
+.our-team-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+.our-team-list {
+  display: flex;
+  gap: 24px;
+}
+.our-team-item {
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.werk-name {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.our-team-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.our-team-item-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.our-team-soc-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+.our-team-soc-item {
+  width: 40px;
+  height: 40px;
+}
+.our-team-soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.our-team-soc-link:hover,
+.our-team-soc-link:focus {
+  background-color: #404bbf;
+}
+.our-team-soc-icon {
+  fill: #f4f4fd;
+}
+/*======================================================*/
+.our-portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.our-portfolio-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+.our-portfolio-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.our-portfolio-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.our-portfolio-application {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.our-portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.our-portfolio-cover-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.our-portfolio-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.our-portfolio-item {
+  width: calc((100% - 48px) / 3);
+  background-color: #fff;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.our-portfolio-item:hover .our-portfolio-cover-text {
+  transform: translateY(0);
+  /*при ховері на li - fon z textom виїзджає вверх=>тобто заховали на 100%( transform: translateY(100%); - дивись класс(.our-portfolio-cover-text), а потім прибрали ці 100% при ховері( transform: translateY(0))*/
+}
+.our-portfolio-cover-text {
+  position: absolute;
+  /*pryviazka do blufon-wrap position:relative*/
+  top: 0;
+  left: 0;
+  /*text styl*/
+  color: #f4f4fd;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding: 40px 32px;
+  /*text po centru*/
+  display: flex;
+  align-items: center;
+  /*styl blue fon pod text*/
+  background-color: #4d5ae5;
+  /*backdrop-filter: blur(7.5px); або якщо по макету блюр-фон => */
+  height: 100%;
+  /*funkcional sinij fon + text*/
+  transform: translateY(100%);
+  /*na vsu vysotu 100% вниз по Y - ischeznet(opustitsja vniz)*/
+
+  /*hover na li +fonz textom vverz vyezgal=> smotri li(klass=>
+  .our-portfolio-item:hover .our-portfolio-cover-text{transform: ;}*/
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /*додаємо transition для плавності при трансформації при ховері при наведені*/
+
+  /*якщо transform видно внизу, то його треба сховати=> щоб фон з текстом заїзжав в "кишеню"-якби зникав=> використавуємо overflow(наповнення-переповнення):hidden для БАТЬКА з классом (.our-portfolio-cover-wrap)=> тобто за межами БАТЬКА дитина хоається і її не видно=> overflow: hidden.
+
+  !!! ( Якщо багато тексту(тоді центрування не flex, а padding), то можна додати скрол, використовуючи overflow:skroll; або overflow:auto(на сам текст додати .our-portfolio-cover-text) =>дивись в конспекті 4 модуль та відео 2 вебінар)*/
+}
