@@ -280,9 +280,12 @@ address {
   /*border-color: #4d5ae5;*/
   /* background-color: transparent;
   background: inherit;*/
-  outline: transparent;
+  background-color: transparent;
   padding-left: 38px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-input :focus {
+  border-color: #4d5ae5;
 }
 .modal-label {
   display: block;
