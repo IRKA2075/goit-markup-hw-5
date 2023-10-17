@@ -287,9 +287,9 @@ margin-bottom:16px;
 }
 .modal-icon{
   position: absolute;
-  /*left: 16px;
+  left: 16px;
   top: -80%;
-  transform: translateX(-50%);*/
+  transform: translateX(-50%);
 }
 .modal-input-wrap{
   position: relative;
