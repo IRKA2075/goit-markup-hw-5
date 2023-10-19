@@ -222,15 +222,15 @@ address {
   width: 264px;
   height: 40px;
   border: 1px solid #fff;
-  background-color: transparent; /*(щоб кнопка стала прозорою( на початку вона біла))*/  
-   font-size: 12px;
-   line-height: 1.5;
-   letter-spacing: 0.04em;
-   padding left: 16px;
-   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); 
-   border-radius: 4px;
-   color: #ffffff;  /*для тексту в середині input*/
-   /*margin-right: 24px; (відступ від кнопки до форми) */
+  background-color: transparent; /*(щоб кнопка стала прозорою( на початку вона біла))*/
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: #ffffff; /*для тексту в середині input*/
+  /*margin-right: 24px; (відступ від кнопки до форми) */
 }
 .footer-input::placeholder {
   color: #ffffff;
@@ -257,7 +257,7 @@ address {
   height: 40px;
   display: flex;
   justify-content: center;
-  align-items: center
+  align-items: center;
 }
 .footer-form-icon {
   margin-left: 16px;
