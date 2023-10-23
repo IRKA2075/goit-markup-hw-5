@@ -447,9 +447,10 @@ div {
 .modal-checkbox-field {
   margin-bottom: 24px;
 }
-.modal-checkbox-policy {
+.modal-label span {
   width: 16px;
   height: 16px;
+  margin-right: 8px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -458,6 +459,16 @@ div {
   align-items: center;
   justify-content: center;
   fill: transparent;
+}
+.modal-checkbox-input:checked + .modal-label span {
+  background-color: #404bbf;
+  border: none;
+}
+.modal-label a {
+  color: #4d5ae5;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration-line: underline;
 }
 /*==================================================================*/
 .hero {
