@@ -326,7 +326,7 @@ div {
 }
 .modal-form {
 }
-.modal-btn-icon {
+.modal-close-btn-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   /*transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -351,10 +351,11 @@ div {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-btn:hover,
+.modal-close-btn:hover,
 .modal-btn:focus {
   background-color: #404bbf;
   border: none;
+  fill: #fff;
 }
 .modal-input:focus + .modal-icon {
   fill: #4d5ae5;
@@ -449,6 +450,18 @@ div {
 .modal-checkbox-field {
   margin-bottom: 24px;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .modal-label span {
   width: 16px;
   height: 16px;
@@ -465,12 +478,18 @@ div {
 .modal-checkbox-input:checked + .modal-label span {
   background-color: #404bbf;
   border: none;
+  fill: #f4f4fd;
 }
 .modal-label a {
   color: #4d5ae5;
   font-weight: 400;
   line-height: 16px;
   text-decoration-line: underline;
+}
+.modal-btn {
+  width: 169px;
+  height: 56px;
+  background-color: #4d5ae5;
 }
 /*==================================================================*/
 .hero {
