@@ -321,9 +321,9 @@ address {
 }
 */
 
-div {
+/*div {
   display: block;
-}
+}*/
 .modal-form {
 }
 .modal-close-btn-icon {
@@ -390,13 +390,14 @@ div {
   width: 100%;
   height: 40px;
   padding-left: 38px;
-  margin-bottom: 8px;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: transparent;
   background: inherit;
+  /*mentor=vydaltyyty
+  background-color: transparent;
+  margin-bottom: 8px;*/
 }
 
 .modal-input:hover {
@@ -413,8 +414,9 @@ div {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  /*mentor = vydalyty
   display: flex;
-  align-items: center;
+  align-items: center;*/
 }
 .modal-icon {
   position: absolute;
